@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+::selection {
+  background-color: #fec260;
+  color: #352e28;
+}
 ::backdrop {
   background-color: rgb(28 25 23 / 0.6);
 }
@@ -259,4 +263,16 @@ dialog ul {
 dialog ul i {
   color: #f15f5d;
   margin-right: 7px;
+}
+@media (max-width: 576px) {
+  dialog {
+    width: 80%;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .form h2 {
+    font-size: 18px;
+  }
 }
